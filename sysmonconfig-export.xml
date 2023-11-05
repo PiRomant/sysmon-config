@@ -8859,12 +8859,6 @@
 			<Rule name="Attack=None,Technique=None,Tactic=None,DS=Windows Registry: Windows Registry Key Modification,Level=0,Desc=WINSCP Sessions,Risk=30" groupRelation="and">
 				<TargetObject condition="contains">WinSCP 2\Sessions</TargetObject>
 			</Rule>
-			<Rule name="Attack=None,Technique=None,Tactic=None,DS=Windows Registry: Windows Registry Key Modification,Desc=Antivirus Registry Moninitoring" groupRelation="or">
-				<Image condition="begin with">C:\Program Files (x86)\Kaspersky Lab</Image> 
-				<Image condition="begin with">C:\Program Files\Kaspersky Lab</Image>
-				<Image condition="begin with">C:\Program Files (x86)\ESET</Image>
-				<Image condition="begin with">C:\Program Files\ESET</Image>
-			</Rule>
 			<Rule name="Attack=None,Technique=None,Tactic=None,DS=Windows Registry: Windows Registry Key Modification,Level=0,Forensic=Browser Helper Object Contacted Domains" groupRelation="and">
 				<TargetObject condition="end with">\EnableBHO</TargetObject>
 			</Rule>
